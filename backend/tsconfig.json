@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",                      // This is correct, you can keep it
+    "moduleResolution": "NodeNext",            // This is correct, you can keep it
+    "target": "ES2022",                        // This is fine, it sets the ECMAScript version
+    "sourceMap": true,                         // Useful for debugging
+    "outDir": "dist",                          // Correct for output directory
+    "allowSyntheticDefaultImports": true,      // Helps with default imports like axios
+    "esModuleInterop": true,                   // This is the missing key to make imports work with CommonJS
+    "skipLibCheck": true                       // Skips type checking of declaration files for faster builds
+  },
+  "include": ["src/**/*.ts", "src/index.ts"]
+}
